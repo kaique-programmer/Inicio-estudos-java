@@ -1,14 +1,22 @@
-import javax.swing.*;
+import com.sun.jdi.connect.Connector;
+
+import java.util.Locale;
+import java.util.Scanner;
 
 public class FirstProgram {
     public static void main(String[] args) {
-        double baseMenor, baseMaior, h, area;
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-        baseMenor = 6.0;
-        baseMaior = 8.0;
-        h = 5.0;
+        int minutes = sc.nextInt();
 
-        area = (baseMenor + baseMaior) / 2.0 * h;
-        System.out.println(area);
+        double billCall = 50.0;
+
+        if (minutes > 100) {
+            billCall +=  (minutes - 100) * 2.0;
+        }
+        System.out.printf("Valor da conta %.2f%n", billCall);
+
+        sc.close();
     }
 }
