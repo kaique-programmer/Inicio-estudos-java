@@ -1,13 +1,11 @@
-import java.util.Scanner;
-
 public class Examples {
     public static void main(String[] args) {
-        int x = 0;
-        int y = 5;
-        while(x < 3) {
-            y += 2;
-            x += 1;
+
+        int soma = 0;
+        for (int i = 0; i < 5; i++) {
+            soma += i;
+            System.out.println("Valor de i: " + i);
         }
-        System.out.println(x + " - " + y);
+        System.out.println("Soma dos valores: " + soma);
     }
 }
