@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
       <module fileurl="file://$PROJECT_DIR$/triangle/triangle.iml" filepath="$PROJECT_DIR$/triangle/triangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/ws-intellij.iml" filepath="$PROJECT_DIR$/ws-intellij.iml" />
     </modules>
