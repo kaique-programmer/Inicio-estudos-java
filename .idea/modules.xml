@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/grade_student/grade_student.iml" filepath="$PROJECT_DIR$/grade_student/grade_student.iml" />
       <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
       <module fileurl="file://$PROJECT_DIR$/retangle/retangle.iml" filepath="$PROJECT_DIR$/retangle/retangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/statics_members/statics_members.iml" filepath="$PROJECT_DIR$/statics_members/statics_members.iml" />
       <module fileurl="file://$PROJECT_DIR$/triangle/triangle.iml" filepath="$PROJECT_DIR$/triangle/triangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/ws-intellij.iml" filepath="$PROJECT_DIR$/ws-intellij.iml" />
     </modules>
