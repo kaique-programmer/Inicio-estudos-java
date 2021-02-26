@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/arrays/arrays.iml" filepath="$PROJECT_DIR$/arrays/arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bank/bank.iml" filepath="$PROJECT_DIR$/bank/bank.iml" />
       <module fileurl="file://$PROJECT_DIR$/conversor_moeda/conversor_moeda.iml" filepath="$PROJECT_DIR$/conversor_moeda/conversor_moeda.iml" />
       <module fileurl="file://$PROJECT_DIR$/employee/employee.iml" filepath="$PROJECT_DIR$/employee/employee.iml" />
       <module fileurl="file://$PROJECT_DIR$/grade_student/grade_student.iml" filepath="$PROJECT_DIR$/grade_student/grade_student.iml" />
