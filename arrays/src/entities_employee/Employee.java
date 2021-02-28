@@ -5,8 +5,16 @@ public class Employee {
     private String employeeName;
     private Double employeeSalary;
 
-    public void increaseSalary(double percentage) {
+    public Employee(){}
 
+    public Employee(Integer employeeId, String employeeName, Double employeeSalary) {
+        this.employeeId = employeeId;
+        this.employeeName = employeeName;
+        this.employeeSalary = employeeSalary;
+    }
+
+    public void increaseSalary(double percentage) {
+        this.employeeSalary += this.employeeSalary * percentage / 100.0;
     }
 
     public Integer getEmployeeId() {
@@ -31,5 +39,10 @@ public class Employee {
 
     public void setEmployeeSalary(Double employeeSalary) {
         this.employeeSalary = employeeSalary;
+    }
+
+    @Override
+    public String toString() {
+        return this.employeeId + ", " + this.employeeName + ", " + String.format("%.2f", this.employeeSalary);
     }
 }
