@@ -11,7 +11,6 @@ public class Program04 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Employee employee = new Employee();
         List<Employee> list = new ArrayList<>();
 
         System.out.print("How many employees will be registered: ");
