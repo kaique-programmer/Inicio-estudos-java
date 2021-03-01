@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/arrays/arrays.iml" filepath="$PROJECT_DIR$/arrays/arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arrays_book/arrays_book.iml" filepath="$PROJECT_DIR$/arrays_book/arrays_book.iml" />
       <module fileurl="file://$PROJECT_DIR$/bank/bank.iml" filepath="$PROJECT_DIR$/bank/bank.iml" />
       <module fileurl="file://$PROJECT_DIR$/conversor_moeda/conversor_moeda.iml" filepath="$PROJECT_DIR$/conversor_moeda/conversor_moeda.iml" />
       <module fileurl="file://$PROJECT_DIR$/employee/employee.iml" filepath="$PROJECT_DIR$/employee/employee.iml" />
