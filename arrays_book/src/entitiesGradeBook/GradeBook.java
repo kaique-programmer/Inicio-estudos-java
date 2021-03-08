@@ -72,7 +72,7 @@ public class GradeBook {
         return (double) total  / grades.length;
     }
 
-    // generates output of the bar chart displaying distribution of the grades
+    // generates bar graph output to display total grade distribution
     public void outputBarChart() {
         System.out.println("Grade distribution");
 
@@ -91,7 +91,7 @@ public class GradeBook {
             else
                 System.out.printf("%02d-%02d: ", count * 10, count * 10 + 9);
 
-            // print a asterisk bar
+            // prints the asterisk bar
             for (int stars =0; stars < frequency[count]; stars++)
                 System.out.print("*");
 
