@@ -1,9 +1,9 @@
-package entities_order_client;
+package model.entities;
 
 public class OrderItem {
 
     private Integer quantity;
-    private double price;
+    private Double price;
     private Product product;
 
     public OrderItem(){}

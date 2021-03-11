@@ -1,4 +1,4 @@
-package entities_order_client;
+package model.entities;
 
 public class Product {
 

@@ -1,6 +1,6 @@
-package entities_order_client;
+package model.entities;
 
-import entities.enums.OrderStatus;
+import model.entities.enums.OrderStatus;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -78,7 +78,7 @@ public class Order {
         stringBuilder.append("Order status: ");
         stringBuilder.append(this.status + "\n");
         stringBuilder.append("Client: ");
-        stringBuilder.append(this.client);
+        stringBuilder.append(this.client + "\n");
         stringBuilder.append("order items:\n");
         for(OrderItem orderItem : orderItemList)
             stringBuilder.append(orderItem + "\n");

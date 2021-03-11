@@ -1,10 +1,10 @@
 package application;
 
-import entities.enums.OrderStatus;
-import entities_order_client.Client;
-import entities_order_client.Order;
-import entities_order_client.OrderItem;
-import entities_order_client.Product;
+import model.entities.enums.OrderStatus;
+import model.entities.Client;
+import model.entities.Order;
+import model.entities.OrderItem;
+import model.entities.Product;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
