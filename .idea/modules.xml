@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/employeeAdditional/employeeAdditional.iml" filepath="$PROJECT_DIR$/employeeAdditional/employeeAdditional.iml" />
       <module fileurl="file://$PROJECT_DIR$/enumeration/enumeration.iml" filepath="$PROJECT_DIR$/enumeration/enumeration.iml" />
       <module fileurl="file://$PROJECT_DIR$/grade_student/grade_student.iml" filepath="$PROJECT_DIR$/grade_student/grade_student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labelProduct/labelProduct.iml" filepath="$PROJECT_DIR$/labelProduct/labelProduct.iml" />
       <module fileurl="file://$PROJECT_DIR$/order_client/order_client.iml" filepath="$PROJECT_DIR$/order_client/order_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/post_comment/post_comment.iml" filepath="$PROJECT_DIR$/post_comment/post_comment.iml" />
       <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
