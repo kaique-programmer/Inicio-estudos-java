@@ -40,6 +40,10 @@ public class Program {
                 System.out.println("Input invalid");
             }
         }
+        System.out.println();
+        System.out.println("TAXES PAID: ");
+        for(TaxPayer taxPayer : list)
+            System.out.println(taxPayer.getName() + ": $ " + String.format("%.2f", taxPayer.getAnnualIncome()));
 
     }
 }
