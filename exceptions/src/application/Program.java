@@ -1,37 +1,45 @@
 package application;
 
-import java.util.InputMismatchException;
+import model.entities.Reservation;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Program {
-    public static void main(String[] args) {
-
-        method2();
-
-        System.out.println("Enf of program");
-
-    }
-
-    public static void method1() {
-        System.out.println("*** METHOD1 START ***");
-        method2();
-        System.out.println("*** METHOD1 END ***");
-    }
-
-    public static void method2() {
-        System.out.println("*** METHOD2 START ***");
+    public static void main(String[] args) throws ParseException {
         Scanner sc = new Scanner(System.in);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
-        try{
-            String[] array = sc.nextLine().split(" ");
-            int position = sc.nextInt();
-            System.out.println(array[position]);
-        }catch (ArrayIndexOutOfBoundsException e) {
-            e.printStackTrace();
-        }catch (InputMismatchException e) {
-            e.printStackTrace();
+        System.out.print("Room number: ");
+        int roomNumber = sc.nextInt();
+        System.out.print("Check-in date (dd/MM/yyyy): ");
+        Date checkIn = simpleDateFormat.parse(sc.next());
+        System.out.print("Check-out date (dd/MM/yyyy): ");
+        Date checkOut = simpleDateFormat.parse(sc.next());
+
+        if(!checkOut.after(checkIn)) {
+            System.out.println("Error in reservation: Check-out date must be after check-in date");
+        } else {
+            Reservation reservation = new Reservation(roomNumber, checkIn, checkOut);
+            System.out.println("Reservation: " + reservation.toString());
+
+            System.out.println();
+            System.out.println("Enter data to update the reservation: ");
+            System.out.print("Check-in date (dd/MM/yyyy): ");
+            checkIn = simpleDateFormat.parse(sc.next());
+            System.out.print("Check-out date (dd/MM/yyyy): ");
+            checkOut = simpleDateFormat.parse(sc.next());
+
+            String error = reservation.updateDates(checkIn, checkOut);
+            if (error != null) {
+                System.out.println("Error in reservation: " + error);
+            } else {
+                System.out.println("Reservation: " + reservation);
+            }
         }
-        System.out.println("*** METHOD2 END ***");
+
         sc.close();
     }
 }
