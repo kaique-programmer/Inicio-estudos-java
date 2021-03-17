@@ -19,31 +19,40 @@ public class Program {
 
         List<TaxPayer> list = new ArrayList<>();
 
-        for (int i=1; i <= numberTaxPayers; i++){
+        for (int i = 1; i <= numberTaxPayers; i++) {
             System.out.println("Tax payer #" + i + " data:");
-            System.out.println("Name: ");
-            String name = sc.nextLine();
-            System.out.println("Annual income: ");
-            double annualIncome = sc.nextDouble();
-            System.out.println();
             System.out.print("Individual or company (i/c) ? ");
-            char individualOrCompany = sc.nextLine().charAt(0);
-            if(individualOrCompany == 'i') {
-                System.out.println("Health expenditures: ");
-                double healthExpenditures = sc.nextDouble();
+            char individualOrCompany = sc.next().charAt(0);
+            System.out.print("Name: ");
+            sc.next();
+            String name = sc.nextLine();
+            System.out.print("Annual income: ");
+            double annualIncome = sc.nextDouble();
+            if (individualOrCompany == 'i') {
+                System.out.print("Health expenditures: ");
+                Double healthExpenditures = sc.nextDouble();
                 list.add(new Individual(name, annualIncome, healthExpenditures));
-            }else if(individualOrCompany == 'c'){
-                System.out.println("Number of employees: ");
-                int numberOfEmployees = sc.nextInt();
+            } else if (individualOrCompany == 'c') {
+                System.out.print("Number of employees: ");
+                Integer numberOfEmployees = sc.nextInt();
                 list.add(new Company(name, annualIncome, numberOfEmployees));
-            }else{
+            } else {
                 System.out.println("Input invalid");
             }
         }
+
         System.out.println();
         System.out.println("TAXES PAID: ");
-        for(TaxPayer taxPayer : list)
-            System.out.println(taxPayer.getName() + ": $ " + String.format("%.2f", taxPayer.getAnnualIncome()));
+        for (TaxPayer taxPayer : list) {
+            System.out.println(taxPayer.getName() + ": $ " + String.format("%.2f", taxPayer.tax()));
+        }
+        System.out.println();
+        double sum = 0.0;
+        for (TaxPayer taxPayer : list)
+            sum += taxPayer.tax();
 
+        System.out.println("TOTAL TAXES: $ " + String.format("%.2f", sum));
+
+        sc.close();
     }
 }
