@@ -1,48 +1,43 @@
 package application;
 
-import util.BankAccount;
-
+import java.text.ParseException;
 import java.util.Locale;
 import java.util.Scanner;
 
+import model.entities.Account;
+import model.exceptions.DomainException;
+
 public class Program {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws ParseException {
+
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        BankAccount bankAccount = new BankAccount();
-
-        System.out.print("Enter account number: ");
-        int accountNumber = sc.nextInt();
-        bankAccount.setAccountNumber(accountNumber);
-
-        System.out.print("Enter account holder: ");
+        System.out.println("Enter account data");
+        System.out.print("Number: ");
+        int number = sc.nextInt();
+        System.out.print("Holder: ");
         sc.nextLine();
-        String accountHolder = sc.nextLine();
-        bankAccount.setAccountHolder(accountHolder);
+        String holder = sc.nextLine();
+        System.out.print("Initial balance: ");
+        double balance = sc.nextDouble();
+        System.out.print("Withdraw limit: ");
+        double withdrawLimit = sc.nextDouble();
 
-        System.out.print("Is there an initial deposit (y/n)? ");
-        char resp = sc.nextLine().charAt(0);
-        if(resp == 'y') {
-            System.out.println("Enter initial deposit value: ");
-            double initialDeposit = sc.nextDouble();
-            bankAccount.setInitialDeposit(initialDeposit);
+        Account acc = new Account(number, holder, balance, withdrawLimit);
+
+        System.out.println();
+        System.out.print("Enter amount for withdraw: ");
+        double amount = sc.nextDouble();
+        try {
+            acc.withdraw(amount);
+            System.out.println("New balance: " + String.format("%.2f", acc.getBalance()));
         }
-        System.out.println();
+        catch (DomainException e) {
+            System.out.println("Withdraw error: " + e.getMessage());
+        }
 
-        System.out.print("Enter a deposit value: ");
-        double deposit = sc.nextDouble();
-        bankAccount.setDeposit(deposit);
-        bankAccount.depositAccountNumber(deposit);
-        System.out.println();
-        System.out.println(bankAccount.toString());
-
-        System.out.print("Enter a withdraw value: ");
-        double withDraw = sc.nextDouble();
-        bankAccount.setWithDraw(withDraw);
-        bankAccount.cashAccountNumber(withDraw);
-        System.out.println();
-        System.out.println(bankAccount.toString());
-
+        sc.close();
     }
 }
