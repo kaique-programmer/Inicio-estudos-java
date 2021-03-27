@@ -39,6 +39,37 @@ public class Array {
         return false;
     }
 
+    public boolean add(int position, String element) {
+        if (!(position >= 0 && position < length)) {
+            throw new IllegalArgumentException("Invalid position");
+        }
+
+        // move all elements
+        for (int i = this.length-1; i >= position; i--) {
+            this.elements[i+1] = this.elements[i];
+        }
+        this.elements[position] = element;
+        this.length++;
+
+        return true;
+    }
+
+    public String search(int position) {
+        if(!(position >= 0 && position < length)) {
+            throw new IllegalArgumentException("Invalid position");
+        }
+        return elements[position];
+    }
+
+    public int search(String element) {
+        for (int i=0; i < this.length; i++) {
+            if (this.elements[i].equals(element)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public int length() {
         return this.length;
     }
