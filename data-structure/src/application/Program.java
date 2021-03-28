@@ -60,6 +60,16 @@ public class Program {
         array.add(3, "D");
 
         System.out.println(array); */
+
+        Array array = new Array(3);
+
+        array.add("B");
+        array.add("C");
+        array.add("E");
+        array.add("F");
+        array.add("G");
+
+        System.out.println(array);
     }
 }
 

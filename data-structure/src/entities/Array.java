@@ -1,8 +1,5 @@
 package entities;
 
-import java.sql.Struct;
-import java.util.Arrays;
-
 public class Array {
 
     private String[] elements;
@@ -31,6 +28,7 @@ public class Array {
     }*/
 
     public boolean add(String element) {
+        increaseCapacity();
         if(this.length < this.elements.length) {
             this.elements[this.length] = element;
             this.length++;
@@ -44,6 +42,8 @@ public class Array {
             throw new IllegalArgumentException("Invalid position");
         }
 
+        increaseCapacity();
+
         // move all elements
         for (int i = this.length-1; i >= position; i--) {
             this.elements[i+1] = this.elements[i];
@@ -52,6 +52,16 @@ public class Array {
         this.length++;
 
         return true;
+    }
+
+    private void increaseCapacity() {
+        if (this.length == this.elements.length) {
+            String[] newElements = new String[this.elements.length * 2];
+            for (int i =0; i < this.elements.length; i++) {
+                newElements[i] = this.elements[i];
+            }
+            this.elements = newElements;
+        }
     }
 
     public String search(int position) {
