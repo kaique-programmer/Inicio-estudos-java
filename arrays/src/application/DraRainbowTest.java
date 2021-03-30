@@ -1,6 +1,6 @@
 package application;
 
-import entities.DrawRainBow;
+import model.entities.DrawRainBow;
 
 import javax.swing.JFrame;
 

@@ -1,6 +1,6 @@
 package application;
 
-import entities.Array;
+import model.entities.Array;
 
 public class Program {
     public static void main(String[] args) {

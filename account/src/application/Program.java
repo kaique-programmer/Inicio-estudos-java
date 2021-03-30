@@ -1,11 +1,10 @@
 package application;
 
-import entities.Account;
-import entities.BusinessAccount;
-import entities.SavingAccount;
+import model.entities.Account;
+import model.entities.BusinessAccount;
+import model.entities.SavingAccount;
 
 import java.util.Locale;
-import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {

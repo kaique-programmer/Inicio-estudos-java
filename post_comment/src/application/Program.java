@@ -1,7 +1,7 @@
 package application;
 
-import entities.Comment;
-import entities.Post;
+import model.entities.Comment;
+import model.entities.Post;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,8 +1,8 @@
 package application;
 
-import entities.Account;
-import entities.BusinessAccount;
-import entities.SavingAccount;
+import model.entities.Account;
+import model.entities.BusinessAccount;
+import model.entities.SavingAccount;
 
 import java.util.ArrayList;
 import java.util.List;

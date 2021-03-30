@@ -1,6 +1,6 @@
 package application;
 
-import entities.Product;
+import model.entities.Product;
 
 import java.io.*;
 import java.util.ArrayList;

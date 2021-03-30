@@ -1,6 +1,6 @@
 package application;
 
-import entities.DeckOfCards;
+import model.entities.DeckOfCards;
 
 public class DeckOfCardsTest {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package application;
 
-import entities.Employee;
-import entities.OutsourcedEmployee;
+import model.entities.Employee;
+import model.entities.OutsourcedEmployee;
 
 import java.util.ArrayList;
 import java.util.List;

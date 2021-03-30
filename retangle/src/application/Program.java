@@ -1,6 +1,6 @@
 package application;
 
-import entities.Rectangle;
+import model.entities.Rectangle;
 
 import javax.swing.*;
 

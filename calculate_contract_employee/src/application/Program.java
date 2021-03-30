@@ -1,7 +1,7 @@
 package application;
 
 
-import entities.enums.WorkerLevel;
+import model.entities.enums.WorkerLevel;
 import entities_worker.Department;
 import entities_worker.HourContract;
 import entities_worker.Worker;

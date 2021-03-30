@@ -1,8 +1,8 @@
 package application;
 
-import entities.Company;
-import entities.Individual;
-import entities.TaxPayer;
+import model.entities.Company;
+import model.entities.Individual;
+import model.entities.TaxPayer;
 
 import java.util.ArrayList;
 import java.util.List;
