@@ -18,9 +18,11 @@
       <module fileurl="file://$PROJECT_DIR$/files/files.iml" filepath="$PROJECT_DIR$/files/files.iml" />
       <module fileurl="file://$PROJECT_DIR$/grade_student/grade_student.iml" filepath="$PROJECT_DIR$/grade_student/grade_student.iml" />
       <module fileurl="file://$PROJECT_DIR$/interface_car_rental/interface_car_rental.iml" filepath="$PROJECT_DIR$/interface_car_rental/interface_car_rental.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interface_compare/interface_compare.iml" filepath="$PROJECT_DIR$/interface_compare/interface_compare.iml" />
       <module fileurl="file://$PROJECT_DIR$/labelProduct/labelProduct.iml" filepath="$PROJECT_DIR$/labelProduct/labelProduct.iml" />
       <module fileurl="file://$PROJECT_DIR$/order_client/order_client.iml" filepath="$PROJECT_DIR$/order_client/order_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/post_comment/post_comment.iml" filepath="$PROJECT_DIR$/post_comment/post_comment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print_service/print_service.iml" filepath="$PROJECT_DIR$/print_service/print_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
       <module fileurl="file://$PROJECT_DIR$/retangle/retangle.iml" filepath="$PROJECT_DIR$/retangle/retangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/statics_members/statics_members.iml" filepath="$PROJECT_DIR$/statics_members/statics_members.iml" />
