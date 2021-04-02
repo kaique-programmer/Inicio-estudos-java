@@ -26,7 +26,9 @@
       <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
       <module fileurl="file://$PROJECT_DIR$/retangle/retangle.iml" filepath="$PROJECT_DIR$/retangle/retangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/statics_members/statics_members.iml" filepath="$PROJECT_DIR$/statics_members/statics_members.iml" />
+      <module fileurl="file://$PROJECT_DIR$/total_student_course/total_student_course.iml" filepath="$PROJECT_DIR$/total_student_course/total_student_course.iml" />
       <module fileurl="file://$PROJECT_DIR$/triangle/triangle.iml" filepath="$PROJECT_DIR$/triangle/triangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user_log/user_log.iml" filepath="$PROJECT_DIR$/user_log/user_log.iml" />
       <module fileurl="file://$PROJECT_DIR$/ws-intellij.iml" filepath="$PROJECT_DIR$/ws-intellij.iml" />
     </modules>
   </component>

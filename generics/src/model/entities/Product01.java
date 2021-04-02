@@ -1,12 +1,13 @@
 package model.entities;
 
+import java.util.Locale;
 import java.util.Objects;
 
-public class Product implements Comparable<Product>{
+public class Product01 implements Comparable<Product01>{
     private String name;
     private Double price;
 
-    public Product(String name, Double price) {
+    public Product01(String name, Double price) {
         this.name = name;
         this.price = price;
     }
@@ -33,8 +34,8 @@ public class Product implements Comparable<Product>{
     }
 
     @Override
-    public int compareTo(Product other) {
-        return price.compareTo(other.getPrice());
+    public int compareTo(Product01 other) {
+        return name.toUpperCase().compareTo(other.getName().toUpperCase());
     }
 
     @Override
@@ -49,4 +50,5 @@ public class Product implements Comparable<Product>{
     public int hashCode() {
         return Objects.hash(getName(), getPrice());
     }
+
 }
