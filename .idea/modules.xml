@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/interface_car_rental/interface_car_rental.iml" filepath="$PROJECT_DIR$/interface_car_rental/interface_car_rental.iml" />
       <module fileurl="file://$PROJECT_DIR$/interface_compare/interface_compare.iml" filepath="$PROJECT_DIR$/interface_compare/interface_compare.iml" />
       <module fileurl="file://$PROJECT_DIR$/labelProduct/labelProduct.iml" filepath="$PROJECT_DIR$/labelProduct/labelProduct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambdas_expressions/lambdas_expressions.iml" filepath="$PROJECT_DIR$/lambdas_expressions/lambdas_expressions.iml" />
       <module fileurl="file://$PROJECT_DIR$/order_client/order_client.iml" filepath="$PROJECT_DIR$/order_client/order_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/post_comment/post_comment.iml" filepath="$PROJECT_DIR$/post_comment/post_comment.iml" />
       <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
