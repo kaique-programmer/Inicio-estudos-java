@@ -25,12 +25,20 @@ public class Product {
         this.price = price;
     }
 
-    public static boolean staticProductPredicate(Product product) {
+    /*public static boolean staticProductPredicate(Product product) {
         return product.getPrice() >= 100.0;
     }
 
     public boolean noStaticProductPredicate() {
         return this.price >= 100.0;
+    }*/
+
+    public static void staticPriceUpdate(Product product) {
+        product.setPrice(product.getPrice() * 1.1);
+    }
+
+    public void noStaticPriceUpdate() {
+        this.price = this.price * 1.1;
     }
 
     @Override
