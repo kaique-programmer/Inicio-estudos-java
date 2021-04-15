@@ -20,6 +20,7 @@ public class Program03 {
         list.add(new Product("Computer", 750.00));
         list.add(new Product("Iphone", 1234.00));
 
+        // five different forms
         //List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
         //List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
         //List<String> names = list.stream().map(Product::NoStaticUpperCaseName).collect(Collectors.toList());

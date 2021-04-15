@@ -43,13 +43,13 @@ public class Product {
         this.price = this.price * 1.1;
     }*/
 
-    public static String staticUpperCaseName(Product product) {
+    /*public static String staticUpperCaseName(Product product) {
         return product.getName().toUpperCase();
     }
 
     public String NoStaticUpperCaseName() {
         return this.name.toUpperCase();
-    }
+    }*/
 
     @Override
     public String toString() {
