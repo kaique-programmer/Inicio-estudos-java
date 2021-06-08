@@ -88,6 +88,16 @@ public class ListStruct<T> {
         return search(element) > -1;
     }
 
+    public int lastIndex(T element) {
+        int lastPosition = -1;
+        for (int i=this.length-1; i >= 0; i--) {
+            if (this.elements[i].equals(element)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public int length() {
         return this.length;
     }
