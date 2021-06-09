@@ -71,7 +71,7 @@ public class Exers {
         System.out.println(listStruct.get(1));
         System.out.println(listStruct.get(4)); */
 
-        ListStruct<String> listStruct = new ListStruct<>(5);
+        ListStruct<String> listStruct = new ListStruct<>(5); // EXER 05
 
         listStruct.add("A");
         listStruct.add("B");
