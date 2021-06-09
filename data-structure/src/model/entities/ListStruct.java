@@ -52,6 +52,10 @@ public class ListStruct<T> {
         }
     }
 
+    public T get(int position) {
+        return (T) this.search(position);
+    }
+
     public Object search(int position) {
         if (!(position >= 0 && position < length)) {
             throw new IllegalArgumentException("Invalid position");
@@ -78,6 +82,13 @@ public class ListStruct<T> {
         this.length--;
     }
 
+    public void remove(T element) {
+        int position = this.search(element);
+        if (position > -1) {
+            this.remove(position);
+        }
+    }
+
     public boolean contains(T element) {
         /*int position = search(element);
         if (position > -1) {
@@ -96,6 +107,20 @@ public class ListStruct<T> {
             }
         }
         return -1;
+    }
+
+    public void clear() {
+        // option 1
+        // this.elements = (T[]) new Object[this.elements.length];
+
+        // option 2
+        // this.length = 0;
+
+        // option 3
+        for (int i=0; i < this.length; i++) {
+            this.elements[i] = null;
+        }
+        this.length = 0;
     }
 
     public int length() {
