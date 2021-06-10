@@ -3,7 +3,7 @@ package stack.labs;
 import java.util.Scanner;
 import stack.Stack;
 
-public class Exers {
+public class Exer01 {
 
     public static void main(String[] args) {
 
@@ -39,6 +39,6 @@ public class Exers {
         }
 
         System.out.println("All elements were unstacked");
-    }
 
+    }
 }
