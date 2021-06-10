@@ -21,4 +21,12 @@ public class Stack<T> extends StaticStruct<T> {
 
         return this.elements[length-1];
     }
+
+    public T pop() {
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        return this.elements[--length];
+    }
 }
