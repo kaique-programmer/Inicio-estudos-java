@@ -34,6 +34,7 @@ public class StackTest {
 
         System.out.println(stack);*/
 
+        // Pop
         stack.push(1);
         stack.push(2);
         stack.push(3);
