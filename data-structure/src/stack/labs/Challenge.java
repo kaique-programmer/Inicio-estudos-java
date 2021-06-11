@@ -4,7 +4,6 @@ import stack.Stack;
 
 public class Challenge {
     public static void main(String[] args) {
-
         printResult("ADA");
 
         printResult("ABCD");
