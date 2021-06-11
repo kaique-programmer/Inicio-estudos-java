@@ -2,7 +2,7 @@ package stack.labs;
 
 import stack.Stack;
 
-public class Challenge {
+public class Challenge01 {
     public static void main(String[] args) {
         printResult("ADA");
 
