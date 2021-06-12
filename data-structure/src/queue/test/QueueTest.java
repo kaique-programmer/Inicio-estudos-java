@@ -18,11 +18,31 @@ public class QueueTest {
 
         System.out.println(queue.toString());*/
 
+        /* peek
         queue.push(2);
         queue.push(1);
         queue.push(3);
 
         System.out.println(queue.peek());
         System.out.println(queue.toString());
+         */
+
+        queue.push(1);
+        queue.push(2);
+        queue.push(3);
+
+        System.out.println(queue);
+
+        System.out.println(queue.remove());
+
+        System.out.println(queue);
+
+        System.out.println(queue.remove());
+
+        System.out.println(queue);
+
+        System.out.println(queue.remove());
+
+        System.out.println(queue);
     }
 }

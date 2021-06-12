@@ -50,6 +50,16 @@ public class StaticStruct<T> {
         }
     }
 
+    protected void remove(int position){
+        if (!(position >= 0 && position < length)){
+            throw new IllegalArgumentException("Posicao inválida");
+        }
+        for (int i=position; i<length-1; i++){
+            elements[i] = elements[i+1];
+        }
+        length--;
+    }
+
     public boolean isEmpty() {
         return this.length == 0;
     }

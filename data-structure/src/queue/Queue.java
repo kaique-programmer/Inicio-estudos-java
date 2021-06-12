@@ -21,4 +21,18 @@ public class Queue<T> extends StaticStruct<T> {
 
         return this.elements[0];
     }
+
+    public T remove() {
+        final int POSITION = 0;
+
+        if (this.isEmpty()){
+            return null;
+        }
+
+        T elementRemoved = this.elements[POSITION];
+
+        this.remove(POSITION);
+
+        return elementRemoved;
+    }
 }
