@@ -9,4 +9,8 @@ public class Queue<T> extends StaticStruct<T> {
     public Queue(int capacity) {
         super(capacity);
     }
+
+    public void push(T element) {
+        this.add(element);
+    }
 }

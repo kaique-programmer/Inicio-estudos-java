@@ -10,5 +10,15 @@ public class QueueTest {
         System.out.println(queue.isEmpty());
         System.out.println(queue.length());
 
+
+        queue.push(1);
+        queue.push(2);
+        queue.push(3);
+        queue.push(4);
+
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.length());
+
+        System.out.println(queue.toString());
     }
 }
