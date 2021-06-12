@@ -24,7 +24,7 @@ public class StaticStruct<T> {
     }
 
     public boolean add(int position, T element) {
-        if (!(position >= 0 && position < length)) {
+        if (position < 0 || position > length) {
             throw new IllegalArgumentException("Invalid position");
         }
 
