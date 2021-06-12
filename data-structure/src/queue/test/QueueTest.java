@@ -7,10 +7,7 @@ public class QueueTest {
 
         Queue<Integer> queue = new Queue<>();
 
-        System.out.println(queue.isEmpty());
-        System.out.println(queue.length());
-
-
+        /* push
         queue.push(1);
         queue.push(2);
         queue.push(3);
@@ -19,6 +16,13 @@ public class QueueTest {
         System.out.println(queue.isEmpty());
         System.out.println(queue.length());
 
+        System.out.println(queue.toString());*/
+
+        queue.push(2);
+        queue.push(1);
+        queue.push(3);
+
+        System.out.println(queue.peek());
         System.out.println(queue.toString());
     }
 }

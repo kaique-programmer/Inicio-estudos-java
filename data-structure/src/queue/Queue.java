@@ -13,4 +13,12 @@ public class Queue<T> extends StaticStruct<T> {
     public void push(T element) {
         this.add(element);
     }
+
+    public T peek() {
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        return this.elements[0];
+    }
 }
